@@ -1,0 +1,5 @@
+@layer components {
+  .base-button-style {
+    @apply inline-block font-bold tracking-none leading-normal text-center align-middle transition-all ease-in cursor-pointer hover:-translate-y-px active:opacity-85;
+  }
+}

@@ -1,0 +1,40 @@
+@layer components {
+  .primary-input {
+    @apply bg-input-background bg-clip-padding
+    block mt-3 w-full font-normal transition-all appearance-none px-3 py-2
+    text-sm text-right leading-5.6 text-typography-700 placeholder:text-typography-500
+    rounded-lg border border-solid border-border-300 outline-none
+    focus:border-none focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+  .login-input {
+    @apply w-full h-full flex flex-col items-center justify-center text-center px-5 outline-none rounded-xl border border-gray-200 text-lg bg-white focus:bg-gray-50 focus:ring-1 ring-primary-500;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Container Custom Styles */
+  .white-container {
+    @apply flex flex-col relative backdrop:blur-md gap-y-5 min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-2xl rounded-2xl bg-clip-border;
+  }
+  .primary-button {
+    @apply inline-block font-bold leading-normal text-center align-middle transition-all ease-in border-0 rounded-lg cursor-pointer text-xs tracking-tight-rem hover:shadow-xs hover:-translate-y-px active:opacity-85;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+}
+
+.dot {
+  @apply w-5 h-5 my-5 mx-1 bg-primary-500 rounded-full;
+}

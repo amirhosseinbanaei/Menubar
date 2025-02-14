@@ -1,0 +1,12 @@
+@layer components {
+  .primary-button {
+    @apply inline-block px-12 py-3 font-bold leading-normal text-center  align-middle transition-all ease-in border-0 rounded-lg cursor-pointer text-xs tracking-tight-rem hover:shadow-xs hover:-translate-y-px active:opacity-85;
+  }
+  .primary-input {
+    @apply bg-input-background bg-clip-padding
+      block mt-3 w-full font-normal transition-all appearance-none px-3 py-2
+      text-sm text-right leading-5.6 text-typography-700 placeholder:text-typography-500
+      rounded-lg border border-solid border-border-300 outline-none
+      focus:border-none focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+}
